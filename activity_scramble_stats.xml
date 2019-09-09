@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.gatech.seclass.sdpscramble.ScrambleStatsActivity">
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutScramble"
+        android:layout_width="361dp"
+        android:layout_height="500dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/scrambleStatsTitle"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:text="Scramble Statistics"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="93dp"
+            tools:layout_editor_absoluteY="46dp" />
+
+        <TableLayout
+            android:id="@+id/HeaderTable"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="13dp">
+
+            <TableRow
+                android:id="@+id/Headings"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/ScrambleID"
+                    android:layout_width="100dp"
+                    android:layout_height="24dp"
+                    android:layout_weight="0.25"
+                    android:text="ScrambleID"
+                    android:textAlignment="center"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/SolvedByPlayer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:layout_weight="0.25"
+                    android:text="SolvedByPlayer"
+                    android:textAlignment="center"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/AddedByPlayer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:layout_weight="0.25"
+                    android:text="AddedByPlayer"
+                    android:textAlignment="center"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/NumTimesSolved"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:layout_weight="0.25"
+                    android:text="# Times Solved"
+                    android:textAlignment="center"
+                    android:textSize="10sp" />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <TableLayout
+            android:id="@+id/mainTableScramble"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="137dp">
+
+        </TableLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

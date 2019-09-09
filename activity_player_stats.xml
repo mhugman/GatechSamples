@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.gatech.seclass.sdpscramble.PlayerStatsActivity">
+
+    <LinearLayout
+        android:layout_width="370dp"
+        android:layout_height="520dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="32dp">
+
+        <TextView
+            android:id="@+id/Title"
+            android:layout_width="366dp"
+            android:layout_height="60dp"
+            android:text="Player Statistics"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            tools:layout_editor_absoluteX="46dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <TableLayout
+            android:id="@+id/HeaderTable"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="300dp"
+                    android:layout_height="66dp"
+                    android:layout_weight="0.4"
+                    android:text="Player Name"
+                    android:textAlignment="center"
+                    android:textSize="10sp"
+                    tools:layout_editor_absoluteX="1dp"
+                    tools:layout_editor_absoluteY="171dp" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="100dp"
+                    android:layout_height="66dp"
+                    android:layout_weight="0.2"
+                    android:text="Scrambles Solved"
+                    android:textAlignment="center"
+                    android:textSize="10sp"
+                    tools:layout_editor_absoluteX="95dp"
+                    tools:layout_editor_absoluteY="171dp" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="94dp"
+                    android:layout_height="66dp"
+                    android:layout_weight="0.2"
+                    android:text="Scrambles Added"
+                    android:textAlignment="center"
+                    android:textSize="10sp"
+                    tools:layout_editor_absoluteX="203dp"
+                    tools:layout_editor_absoluteY="171dp" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="78dp"
+                    android:layout_height="67dp"
+                    android:layout_weight="0.2"
+                    android:text="Avg # Solved by Other Players"
+                    android:textAlignment="center"
+                    android:textSize="10sp"
+                    tools:layout_editor_absoluteX="308dp"
+                    tools:layout_editor_absoluteY="183dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </TableLayout>
+
+        <TableLayout
+            android:id="@+id/mainTablePlayer"
+            android:layout_width="match_parent"
+            android:layout_height="374dp"
+            android:layout_marginBottom="8dp"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="8dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </TableLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
